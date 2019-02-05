@@ -30,10 +30,26 @@ public class Module2app {
                 System.out.println("You entered: " + userInputArray[i]);
                 
             }
-              
+        
+        //Strings in array compared to each other|arranged aA-zZ
+        String sortTemp;
+        boolean wasSwaped = true;
+            for (int index1 = 0; index1 < userInputArray.length - 1 && wasSwaped; ++index1) {
+                wasSwaped = false;
+                for (int index2 = 0; index2 < userInputArray.length - index1 - 1; ++index2) {
+                    if (userInputArray[index2].compareToIgnoreCase(userInputArray[index2+1]) > 0) {
+                        sortTemp = userInputArray[index2];
+                        userInputArray[index2] = userInputArray[index2+1];
+                        userInputArray[index2+1] = sortTemp;
+                        wasSwaped = true;
+            }
+        }
+    }
+        for (int j=0; j<stringTotal; j++)
+            System.out.println(userInputArray[j]);
         stdin.close();
             
-        //TODO Strings compared to or arranged in alphabetical order
+        
     
         //TODO Print each string to console
             
