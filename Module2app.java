@@ -49,10 +49,6 @@ public class Module2app {
             System.out.println(userInputArray[j]);
         stdin.close();
             
-        
-    
-        //TODO Print each string to console
-            
     }
     
 }
